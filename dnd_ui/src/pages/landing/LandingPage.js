@@ -3,7 +3,7 @@ import logo from "../../assets/images/red_d20.png";
 import Button from "../../components/Button/Button";
 import "./LandingPage.css";
 
-export const LandingPage = () => {
+export const LandingPage = ({roll}) => {
   return (
     <div className="Landing">
       <header className="Landing-header">
@@ -12,9 +12,10 @@ export const LandingPage = () => {
 
         <Button 
             text="Roll for initiative" 
-            bootstrapClass= "btn btn-outline-secondary" 
+            bootstrapClass= "btn btn-outline-light" 
+            onClick= {roll}
         />
-        
+
       </header>
     </div>
   );
