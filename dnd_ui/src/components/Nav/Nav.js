@@ -1,32 +1,28 @@
-import React from 'react'
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import d20 from "../../assets/images/red_d20.png"
 
 const Nav = () => {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">DnD Handbook</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  )
-}
+    <>
+  
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt="D20"
+              src={d20}
+              width="40"
+              height="40"
+              className="d-inline-block align-middle"
+            />{" "}
+            DnD Handbook
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </>
+  );
+};
 
-export default Nav
+export default Nav;

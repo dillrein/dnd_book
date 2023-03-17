@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/red_d20.png";
+import logo from "../../assets/images/numberRed_d20.png";
 import Button from "../../components/Button/Button";
 import "./LandingPage.css";
 
