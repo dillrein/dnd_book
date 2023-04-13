@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../../assets/images/numberRed_d20.png";
-import Button from "../../components/Button/Button";
+import Button from 'react-bootstrap/Button';
 import "./LandingPage.css";
+
 
 export const LandingPage = ({roll}) => {
   return (
@@ -10,11 +11,7 @@ export const LandingPage = ({roll}) => {
         <img src={ logo } className="Landing-logo" alt="logo" />
         <p>Adventure awaits!</p>
 
-        <Button 
-            text="Roll for initiative" 
-            bootstrapClass= "btn btn-outline-light" 
-            onClick= {roll}
-        />
+        <Button variant="outline-secondary" onClick={roll}>Roll for initiative</Button>
 
       </header>
     </div>

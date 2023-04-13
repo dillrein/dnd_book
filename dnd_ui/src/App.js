@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav/Nav';
-import DicePage from './pages/DicePage/DicePage';
-import { LandingPage } from './pages/landing/LandingPage';
+import  {DicePage}  from './pages/DicePage/DicePage';
+import  {LandingPage}  from './pages/landing/LandingPage';
 
 function App() {
   const [landed, setLanded] = useState(false);
@@ -13,8 +13,6 @@ function App() {
 
   return (
 
-
-
     <div >
       {!landed ? 
       <LandingPage roll = {roll}/> :
@@ -24,7 +22,6 @@ function App() {
       </div>
     
     }
-      
     </div>
   );
 }
